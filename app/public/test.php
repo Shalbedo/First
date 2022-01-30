@@ -19,7 +19,7 @@ function add ($db, $firstName, $lastName) {
 }
 function showTits ($db){
     $statement=$db->prepare("select * from user");
-    $statement->execute(); // execute - выполняет запрос к БД
+    $statement->execute(); // execute - выполняет запрос к БД. TEST
     while ($gag=$statement->fetch()) { // fetch - получить результат выполнения запроса (одну строчку)
         print_r($gag);
     }
